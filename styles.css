@@ -1,0 +1,162 @@
+:root{
+  --white: #FFFFFF;
+  --black: #000000;
+  --c-form-input: #F5F7FF;
+  --c-main-bg: #EEF8FE;
+  --c-btn-green: #4EE307;
+  --c-lebel-grey: #ADADAD;
+}
+
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Georgia', serif;
+  background: url('assets/bg-pattern.svg'), var(--c-main-bg);
+}
+
+.container{
+  width: 65vw;
+  max-width: 300px;
+  background: var(--white);
+  border-radius: 12px;
+  border: 1px solid var(--black);
+  padding: 20px;
+}
+
+.container .header{
+  font-size: 25px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.container .header > div:last-child{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.container .form-outer{
+  width: 100%;
+  overflow: hidden;
+}
+
+.form-outer form{
+  display: flex;
+  width: 400%;
+}
+
+.form-outer form .page{
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+  /* border: 1px solid var(--black); */
+}
+
+.form-outer form .page .title{
+  font-size: 20px;
+  text-align: center;
+}
+
+.form-outer form .page .img-signup{
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 40%;
+  margin: 20px 0;
+  background-size: contain;
+}
+
+.img-login{
+  background-image: url('/assets/img-login.svg');
+}
+
+.img-otp{
+  background-image: url('/assets/img-otp.svg');
+}
+
+.form-outer form .page .field{
+  height: 30px;
+  width: 100%;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+
+.input-field{
+  margin-top: 25px;
+  position: relative;
+}
+
+.input-field label{
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.input-field input{
+  width: 94%;
+  height: 30px;
+}
+
+.input-field input:valid~label,
+.input-field input:focus~label{
+  color: #1abc9c;
+  top: 0;
+}
+
+.form-outer form .page .field:last-child{
+  display: flex;
+  color: var(--black);
+}
+
+.form-outer form .page .field input{
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: 'Georgia';
+  padding-left: 10px;
+  background-color: var(--c-form-input);
+}
+
+.form-outer form .page .field button{
+  width: 60%;
+  height: calc(100% + 7px);
+  margin-top: -5px;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  justify-content: center;
+  background-color: var(--c-btn-green);
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 0;
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.25px;
+  cursor: pointer;
+}
+
+.signupBtn{
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-outer form .page .field button:hover{
+  background-color: var(--black);
+}
+
+.form-outer form .page .field button div{
+  margin: 0 5px;
+}
+
+.form-outer form .page .btns button{
+  margin: 0% 10px;
+}
