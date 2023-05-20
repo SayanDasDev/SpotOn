@@ -45,7 +45,7 @@ body {
 
 .container .form-outer{
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .form-outer form{
@@ -89,14 +89,10 @@ body {
   position: relative;
 }
 
-.form-outer form .page .field:last-child{
-  display: flex;
-  color: var(--black);
-}
-
 .form-outer form .page .field input{
   height: 100%;
   width: 100%;
+  margin: 0 5px;
   border: 1px solid black;
   border-radius: 5px;
   font-size: 15px;
@@ -127,10 +123,15 @@ body {
   outline-color: var(--c-btn-blue)
 }
 
-.form-outer form .page .field button{
-  width: 60%;
-  height: calc(100% + 7px);
-  margin-top: 5px;
+.btns{
+  display: flex;
+  margin-top: auto !important;
+  justify-content: space-around;
+}
+
+.form-outer form .page .btns button{
+  width: fit-content;
+  margin-top: auto;
   display: flex;
   align-items: center;
   color: var(--white);
@@ -138,7 +139,7 @@ body {
   background-color: var(--c-btn-blue);
   border: 1px solid black;
   border-radius: 5px;
-  padding: 5px 0;
+  padding: 5px 20px;
   font-size: 15px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-transform: uppercase;
@@ -149,16 +150,11 @@ body {
   box-shadow: var(--c-btn-shadow)
 }
 
-.signupBtn{
-  display: flex;
-  justify-content: space-around;
-}
-
-.form-outer form .page .field button:hover{
+.form-outer form .page .btns button:hover{
   background-color: var(--black);
 }
 
-.form-outer form .page .field button div{
+.form-outer form .page .btns button div{
   margin: 0 5px;
 }
 
