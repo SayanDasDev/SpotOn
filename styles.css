@@ -45,7 +45,7 @@ body {
 
 .container .form-outer{
   width: 100%;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .form-outer form{
@@ -56,7 +56,6 @@ body {
 .form-outer form .page{
   width: 25%;
   transition: margin-left 0.3s ease-in-out;
-  /* border: 1px solid var(--black); */
 }
 
 .form-outer form .page .title{
