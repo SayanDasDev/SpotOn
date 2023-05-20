@@ -2,8 +2,9 @@
   --white: #FFFFFF;
   --black: #000000;
   --c-form-input: #F5F7FF;
+  --c-form-input-gradient: -webkit-linear-gradient(270deg, #FFFFFF 50%, #F5F7FF 50%);
   --c-main-bg: #EEF8FE;
-  --c-btn-green: #4EE307;
+  --c-btn-blue: #2EA7FF;
   --c-lebel-grey: #ADADAD;
 }
 
@@ -79,7 +80,7 @@ body {
 .form-outer form .page .field{
   height: 40px;
   width: 100%;
-  margin: 45px 0;
+  margin: 25px 0;
   display: flex;
   position: relative;
 }
@@ -106,26 +107,40 @@ body {
   left: 10px;
   transform: translateY(-50%);
   pointer-events: none;
+<<<<<<< HEAD
+  padding: 0 5px;
+  transition: all 0.3s ease;
+=======
   transition: all 0.5s ease;
+>>>>>>> 04eb37bb8b82e60820bbba30766acf3d94214e5c
 }
 
 .field input:valid~label,
 .field input:focus~label{
   top: 0;
   font-size: 15px;
+<<<<<<< HEAD
+  background-image: var(--c-form-input-gradient);
+  color: var(--c-btn-blue);
+}
+
+.field input:focus{
+  outline-color: var(--c-btn-blue)
+=======
   background-color: var(--white);
   border-color: var(--c-btn-green);
+>>>>>>> 04eb37bb8b82e60820bbba30766acf3d94214e5c
 }
 
 .form-outer form .page .field button{
   width: 60%;
   height: calc(100% + 7px);
-  margin-top: -5px;
+  margin-top: 5px;
   display: flex;
   align-items: center;
   color: var(--white);
   justify-content: center;
-  background-color: var(--c-btn-green);
+  background-color: var(--c-btn-blue);
   border: 1px solid black;
   border-radius: 5px;
   padding: 5px 0;
@@ -151,5 +166,5 @@ body {
 }
 
 .form-outer form .page .btns button{
-  margin: 0% 10px;
+  margin: 5px 10px 0 10px;
 }
