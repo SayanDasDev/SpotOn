@@ -16,7 +16,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   font-family: 'Georgia', serif;
-  background: url('assets/bg-pattern.svg'), var(--c-main-bg);
+  background: url('./assets/bg-pattern.svg'), var(--c-main-bg);
 }
 
 .container{
@@ -70,11 +70,11 @@ body {
 }
 
 .img-login{
-  background-image: url('/assets/img-login.svg');
+  background-image: url('./assets/img-login.svg');
 }
 
 .img-otp{
-  background-image: url('/assets/img-otp.svg');
+  background-image: url('./assets/img-otp.svg');
 }
 
 .form-outer form .page .field{
