@@ -6,6 +6,8 @@
   --c-main-bg: #EEF8FE;
   --c-btn-blue: #2EA7FF;
   --c-lebel-grey: #ADADAD;
+  --c-container-shadow: rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  --c-btn-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 
@@ -27,6 +29,7 @@ body {
   border: 1px solid var(--black);
   padding: 40px 20px;
   padding-bottom: 50px;
+  box-shadow: var(--c-container-shadow);
 }
 
 .container .header{
@@ -142,6 +145,8 @@ body {
   font-weight: 600;
   letter-spacing: 1.25px;
   cursor: pointer;
+  outline: none !important;
+  box-shadow: var(--c-btn-shadow)
 }
 
 .signupBtn{
