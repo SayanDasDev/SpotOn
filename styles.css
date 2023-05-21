@@ -1,14 +1,14 @@
 .field input:valid~label,
 .field input:focus~label {
-    color: var(--c-accent-dark-blue);
+    color: var(--c-accent-light-blue);
 }
 
 .field input:focus {
-    outline-color: var(--c-accent-dark-blue)
+    outline-color: var(--c-accent-light-blue)
 }
 
 .form-outer .form .page .btns button {
-    background-color: var(--c-accent-dark-blue);
+    background-color: var(--c-accent-light-blue);
     margin-top: 20px;
 }
 
@@ -22,7 +22,7 @@
 
 a{
     text-decoration: none;
-    color: var(--c-accent-dark-blue);
+    color: var(--c-accent-light-blue);
     font-weight: 600;
 }
 
