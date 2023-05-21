@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup</title>
-    <link rel="stylesheet" href="../../master.css"/>
+    <link rel="stylesheet" href="../../master.css" />
   </head>
   <body>
     <div class="container">
@@ -26,18 +26,20 @@
                 form="novalidateform"
                 required
               />
-              <label>Phone Number</label>
+              <label for="phoneNumberSignup">Phone Number</label>
             </div>
             <div class="btns signup-btn">
               <button id="signupBtn">
-                <div><img src="../../assets/img-btn-whatsapp.svg" alt="" /></div>
+                <div>
+                  <img src="../../assets/img-btn-whatsapp.svg" alt="" />
+                </div>
                 <div>Sign up</div>
               </button>
             </div>
             <div class="login-signup-txt">
               Already have an account?
               <a href="../../index.html">Log in</a>
-          </div>
+            </div>
           </div>
           <!-- page 2 -->
           <div class="page">
@@ -49,7 +51,7 @@
                   form="novalidateform"
                   required
                 />
-                <label>First Name</label>
+                <label for="firstName">First Name</label>
               </div>
               <div class="field">
                 <input
@@ -58,11 +60,16 @@
                   form="novalidateform"
                   required
                 />
-                <label>Last Name</label>
+                <label for="lastName">Last Name</label>
               </div>
               <div class="field">
-                <input id="emailSignup" type="email" form="novalidateform" required />
-                <label>E-mail</label>
+                <input
+                  id="emailSignup"
+                  type="email"
+                  form="novalidateform"
+                  required
+                />
+                <label for="emailSignup">E-mail</label>
               </div>
               <div class="field">
                 <input
@@ -71,21 +78,19 @@
                   form="novalidateform"
                   required
                 />
-                <label>Password</label>
+                <label for="passwordSignup">Password</label>
               </div>
             </div>
 
-            
-              <div class="btns">
-                <button class="back-btn">
-                  <div><img src="../../assets/img-btn-back.svg" alt="" /></div>
-                  <!-- <div>Back</div> -->
-                </button>
-                <button id="submitBtn" class="submit-btn">
-                  <div><img src="../../assets/img-btn-submit.svg" alt="" /></div>
-                  <div>Submit</div>
-                </button>
-              
+            <div class="btns">
+              <button class="back-btn">
+                <div><img src="../../assets/img-btn-back.svg" alt="" /></div>
+                <!-- <div>Back</div> -->
+              </button>
+              <button id="submitBtn" class="submit-btn">
+                <div><img src="../../assets/img-btn-submit.svg" alt="" /></div>
+                <div>Submit</div>
+              </button>
             </div>
           </div>
         </div>
