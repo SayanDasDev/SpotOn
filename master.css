@@ -1,0 +1,202 @@
+:root{
+  --white: #FFFFFF;
+  --black: #000000;
+  --c-form-input: #F5F7FF;
+  --c-form-input-gradient: -webkit-linear-gradient(270deg, #FFFFFF 50%, #F5F7FF 50%);
+  --c-main-bg: #EEF8FE;
+  --c-accent-light-blue: #2EA7FF;
+  --c-accent-dark-blue: #425FEC;
+  --c-lebel-grey: #ADADAD;
+  --c-container-shadow: rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  --c-btn-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Georgia', serif;
+  background: url('./assets/bg-pattern.svg'), var(--c-main-bg);
+}
+
+.container{
+  width: 65vw;
+  max-width: 300px;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 40px 20px;
+  box-shadow: var(--c-container-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container .header{
+  font-size: 25px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container .header > div:last-child{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.container .form-outer{
+  width: 100%;
+  overflow: hidden;
+}
+
+.form-outer .form{
+  display: flex;
+  width: 400%;
+  
+}
+
+.form-outer .form .page{
+  width: 25%;
+  height: fit-content;
+  box-sizing: content-box;
+  padding: 10px 0;
+  transition: margin-left 0.3s ease-in-out;
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.form-outer .form .page .title{
+  font-size: 20px;
+  text-align: center;
+}
+
+.form-outer .form .page .img-div{
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 25vh;
+  margin: 20px 0;
+  background-size: contain;
+}
+
+.img-login{
+  background-image: url('./assets/img-login.svg');
+}
+
+.img-signup{
+  background-image: url('./assets/img-signup.svg');
+}
+
+.img-otp{
+  background-image: url('./assets/img-otp.svg');
+}
+
+.page .login-signup-txt {
+  font-size: 1rem;
+  margin: 2.5vh auto 0 auto;
+}
+
+a{
+  text-decoration: none;
+  color: var(--c-accent-light-blue);
+  font-weight: 600;
+}
+
+.login-signup-txt>span {
+  color: var(--c-accent-dark-blue);
+  font-weight: 600;
+}
+
+.form-outer .form .page .field{
+  height: 40px;
+  width: 100%;
+  margin: 25px 0;
+  display: flex;
+  position: relative;
+}
+
+.form-outer .form .page .field input{
+  height: 100%;
+  width: 100%;
+  margin: 0 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: 'Georgia';
+  padding-left: 10px;
+  background-color: var(--c-form-input);
+}
+
+.field label{
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: var(--c-lebel-grey);
+  pointer-events: none;
+  padding: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.field input:valid~label,
+.field input:focus~label{
+  top: 0;
+  font-size: 15px;
+  background-image: var(--c-form-input-gradient);
+  color: var(--c-accent-light-blue);
+}
+
+.field input:focus{
+  outline-color: var(--c-accent-light-blue)
+}
+
+.btns{
+  display: flex;
+  margin-top: auto !important;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 310px){
+  .btns{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.form-outer .form .page .btns button{
+  width: fit-content;
+  max-width: 50vw !important;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  justify-content: center;
+  background-color: var(--c-accent-light-blue);
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px min(20px, 2.5vw);
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.25px;
+  cursor: pointer;
+  outline: none !important;
+  box-shadow: var(--c-btn-shadow)
+}
+
+.form-outer .form .page .btns button:hover{
+  background-color: var(--black);
+}
+
+.form-outer .form .page .btns button div{
+  margin: 0 5px;
+}
+
+.form-outer .form .page .btns button{
+  margin: 5px 10px 0 10px;
+}

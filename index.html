@@ -1,88 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../../master.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <div>Welcome to</div>
-            <div>SpotOn</div>
+      <div class="header">
+        <div>Welcome to</div>
+        <div>SpotOn</div>
+      </div>
+      <div class="form-outer">
+        <div class="form">
+          <!-- page 1 -->
+          <div class="page slidePage">
+            <div class="img-div img-login"></div>
+            <div class="title">Signup With Whatsapp</div>
+            <div class="field">
+              <input
+                id="phoneNumber"
+                type="text"
+                form="novalidateform"
+                required
+              />
+              <label>Phone Number</label>
+            </div>
+            <div class="btns signup-btn">
+              <button id="signupBtn">
+                <div><img src="../../assets/img-btn-whatsapp.svg" alt="" /></div>
+                <div>Log In</div>
+              </button>
+            </div>
+            <div class="login-signup-txt">
+                Dont have an account?
+                <a href="./pages/signup/index.html">Sign up</a>
+            </div>
         </div>
-        <div class="form-outer">
-            <form action="#">
-                <!-- page 1 -->
-                <div class="page slidePage">
-                    <div class="img-signup img-login"></div>
-                    <div class="title">Signup With Whatsapp</div>
-                    <div class="field">
-                        <input type="text" form="novalidateform" required>
-                        <label>Phone Number</label>
-                    </div>
-                    <div class="btns signupBtn">
-                        <button>
-                            <div><img src="./assets/img-btn-whatsapp.svg" alt=""></div>
-                            <div>Sign up</div>
-                        </button>
-                    </div>
-                </div>
-                <!-- page 2 -->
-                <div class="page">
-                    <div class="field">
-                        <input type="text" form="novalidateform" required>
-                        <label>First Name</label>
-                    </div>
-                    <div class="field">
-                        <input type="text" form="novalidateform" required>
-                        <label>Last Name</label>
-                    </div>
-                    <div class="field">
-                        <input type="email" form="novalidateform" required>
-                        <label>E-mail</label>
-                    </div>
-                    <div class="field">
-                        <input type="password" form="novalidateform" required>
-                        <label>Password</label>
-                    </div>
-                   
-                    <div class="btns">
-                        <button class="back-1 back">
-                            <div><img src="./assets/img-btn-back.svg" alt=""></div>
-                            <!-- <div>Back</div> -->
-                        </button>
-                        <button class="next-1 next">
-                            <div><img src="./assets/img-btn-next.svg" alt=""></div>
-                            <div>Next</div>
-                        </button>
-                    </div>
-                </div>
-                <!-- page 3 -->
-                <div class="page">
-                    <div class="img-signup img-otp"></div>
-                    <div class="title">Check Your Mail for OTP</div>
-                    <div class="field otp">
-                        <input type="text" form="novalidateform" required>
-                        <label>OTP</label>
-                    </div>
-                   
-                    <div class="btns">
-                        <button class="back-2 back">
-                            <div><img src="./assets/img-btn-back.svg" alt=""></div>
-                            <!-- <div>Back</div> -->
-                        </button>
-                        <button class="next-2 next">
-                            <div><img src="./assets/img-btn-submit.svg" alt=""></div>
-                            <div>Submit</div>
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </div>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

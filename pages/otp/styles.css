@@ -1,0 +1,17 @@
+.otp{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 4.5vh auto !important;
+    max-width: 260px !important;
+}
+
+.otp > input{
+    width: 7vw !important;
+    max-width: 30px !important;
+    text-align: center;
+    caret-color: transparent;
+    font-size: 1.5rem !important;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
