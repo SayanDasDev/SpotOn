@@ -19,21 +19,32 @@
           <!-- page 1 -->
           <div class="page slidePage">
             <div class="img-div img-login"></div>
-            <div class="title">Signup With Whatsapp</div>
             <div class="field">
               <input
-                id="phoneNumber"
-                type="text"
+                id="emailLogin"
+                type="email"
                 form="novalidateform"
                 required
               />
-              <label>Phone Number</label>
+              <label>E-mail</label>
+            </div>
+            <div class="field">
+              <input
+                id="passwordLogin"
+                type="password"
+                form="novalidateform"
+                required
+              />
+              <label>Password</label>
             </div>
             <div class="btns signup-btn">
               <button id="signupBtn">
-                <div><img src="../../assets/img-btn-whatsapp.svg" alt="" /></div>
+                <div><img src="../assets/img-btn-whatsapp.svg" alt="" /></div>
                 <div>Log In</div>
               </button>
+            </div>
+            <div class="login-signup-txt">
+                <a id="forgot" href="./pages/otp/Index.html">Forgot Password?</a>
             </div>
             <div class="login-signup-txt">
                 Dont have an account?

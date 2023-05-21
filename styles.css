@@ -9,10 +9,23 @@
 
 .form-outer .form .page .btns button {
     background-color: var(--c-accent-dark-blue);
+    margin-top: 20px;
+}
+
+.form-outer .form .page .field{
+    margin: 10px 0;
+}
+
+.page .login-signup-txt{
+    margin-top: 5px;
 }
 
 a{
     text-decoration: none;
     color: var(--c-accent-dark-blue);
     font-weight: 600;
+}
+
+#forgot{
+    font-size: 0.75rem !important;
 }

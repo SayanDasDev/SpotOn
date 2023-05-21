@@ -85,6 +85,8 @@ body {
 
 .img-login{
   background-image: url('./assets/img-login.svg');
+  height: 19vh !important;
+  
 }
 
 .img-signup{
@@ -152,6 +154,11 @@ a{
 
 .field input:focus{
   outline-color: var(--c-accent-light-blue)
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  display: none;
 }
 
 .btns{
