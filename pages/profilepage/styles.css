@@ -87,7 +87,7 @@ body{
     display: flex;
     align-items: center;
     margin: 15px auto;
-    width: 400px;
+    width: 100%;
 }
 
 .user-info-view .info-card img{
@@ -101,7 +101,6 @@ body{
 
 .user-info-view .info-card > div{
     margin-left: 15px;
-    text-overflow: ellipsis;
 }
 
 .user-info-view .info-card > div >div:first-child{
@@ -112,4 +111,8 @@ body{
 .user-info-view .info-card > div >div:last-child{
     font-size: 1.05rem;
     font-weight: 600;
+    width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
