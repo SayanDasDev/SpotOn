@@ -1,0 +1,99 @@
+body{
+    background: url(../../assets/pfp/img-pfp-bg.svg);
+}
+
+*{
+    box-sizing: border-box !important;
+}
+
+.pf-page-contianer{
+    width: 100vw;
+    max-width: 600px;
+    height: 100vh;
+}
+
+.banner{
+    height: 25vh;
+    max-height: 250px;
+    background: url(../../assets/pfp/img-pfp-banner.svg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    padding: 20px 20px 0 20px;
+    transition: all 0.5s ease-in-out;
+    filter: drop-shadow(0px 0px 4px var(--c-shadow));
+}
+
+@media (min-aspect-ratio: 0.67){
+    .banner{
+        background: linear-gradient(78.16deg, #36A2E8 37%, #9DD0FF 88.8%);
+        transition: all 0.5s ease-in-out;
+        
+    }
+    .pf-page-contianer{
+        background-color: var(--white);
+        margin: 50px;
+        border-radius: 25px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        overflow: hidden;
+    }
+}
+@media (max-aspect-ratio: 0.4){
+    .banner{
+        background: linear-gradient(78.16deg, #36A2E8 37%, #9DD0FF 88.8%);
+        transition: all 0.5s ease-in-out;
+    }
+    .pf-page-contianer{
+        background-color: var(--white);
+        margin: 50px;
+        border-radius: 25px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        overflow: hidden;
+    }
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner .user-info-brief{
+    padding-top: 10px;
+    color: var(--white);
+}
+
+.banner .user-info-brief div:first-child{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.banner .pf-pic-container{
+    position: absolute;
+    left: min(60vw, 450px);
+}
+
+.user-info-view{
+    margin-top: 50px;
+    padding: 0 25px;
+}
+
+.user-info-view .info-card{
+    display: flex;
+    align-items: center;
+    margin: 15px auto;
+}
+
+.user-info-view .info-card img{
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    background-color: var(--c-icon-light-blue);
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.user-info-view .info-card > div{
+    margin-left: 15px;
+}

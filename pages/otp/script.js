@@ -48,4 +48,5 @@ const verifyBtn = document.getElementById("verifyBtn")
 
 verifyBtn.addEventListener("click", function () {
     printOTP();
+    window.location.href="../profilepage/index.html";
 });

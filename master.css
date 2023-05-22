@@ -7,6 +7,8 @@
   --c-accent-light-blue: #2EA7FF;
   --c-accent-dark-blue: #425FEC;
   --c-lebel-grey: #ADADAD;
+  --c-icon-light-blue: #C3E5FF;
+  --c-shadow: #969696;
   --c-container-shadow: rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
   --c-btn-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
@@ -19,6 +21,8 @@ body {
   justify-content: center;
   min-height: 100vh;
   font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
   background: url('./assets/bg-pattern.svg'), var(--c-main-bg);
 }
 
