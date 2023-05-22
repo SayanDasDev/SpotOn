@@ -1,5 +1,6 @@
 body{
     background: url(../../assets/pfp/img-pfp-bg.svg);
+    
 }
 
 *{
@@ -9,7 +10,6 @@ body{
 .pf-page-contianer{
     width: 100vw;
     max-width: 600px;
-    height: 100vh;
 }
 
 .banner{
@@ -75,14 +75,18 @@ body{
 }
 
 .user-info-view{
-    margin-top: 50px;
+    margin: 50px 0;
     padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .user-info-view .info-card{
     display: flex;
     align-items: center;
     margin: 15px auto;
+    width: 400px;
 }
 
 .user-info-view .info-card img{
@@ -96,4 +100,15 @@ body{
 
 .user-info-view .info-card > div{
     margin-left: 15px;
+    text-overflow: ellipsis;
+}
+
+.user-info-view .info-card > div >div:first-child{
+    font-size: 0.75rem;
+    color: var(--c-lebel-grey);
+}
+
+.user-info-view .info-card > div >div:last-child{
+    font-size: 1.05rem;
+    font-weight: 600;
 }
