@@ -7,19 +7,25 @@
     <title>ProfilePage</title>
     <link rel="stylesheet" href="../../master.css" />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./extrastyles.css" />
   </head>
   <body>
     <div class="pf-page-contianer">
       <div class="banner">
         <div class="nav">
-          <img src="../../assets/pfp/ico-back.svg" alt="" />
-          <img src="../../assets/pfp/ico-edit.svg" alt="" />
+          <div id="backBtnPfPage">
+            <img src="../../assets/pfp/ico-back.svg" alt="" />
+          </div>
+          <div id="editSaveBtn" class="edit-btn">
+            <!-- <img src="../../assets/pfp/ico-edit.svg" alt="" /> -->
+          </div>
         </div>
-        <div class="user-info-brief">
+        <div id="bannerText" class="user-info-brief">
           <div>RollsRoyce69</div>
           <div>rolls.royce@69.com</div>
         </div>
-        <div class="pf-pic-container">
+        <div id="pf-pic-container" class="left-positioned">
+          
           <img src="../../assets/pfp/img-avatar.svg" alt="" class="avatar" />
         </div>
       </div>
@@ -28,52 +34,59 @@
           <img src="../../assets/pfp/ico-username.svg" alt="" class="info-icon"
           />
           <div>
-            <div>Username</div>
+            <label for="userName">Username</label>
             <div>RollsRoyce69</div>
+            <input type="text" id="userName" class="user-info-input hidden" />
           </div>
         </div>
         <div class="info-card">
             <img src="../../assets/pfp/ico-name.svg" alt="" class="info-icon" />
             <div>
-              <div>Name</div>
+              <label for="name">Name</label>
               <div>Sayan Das</div>
+              <input type="text" id="name" class="user-info-input hidden" />
             </div>
           </div>
         <div class="info-card">
           <img src="../../assets/pfp/ico-email.svg" alt="" class="info-icon" />
           <div>
-            <div>E-mail</div>
+            <label for="email">E-mail</label>
             <div>rolls.royce@69.com</div>
+            <input type="email" id="email" class="user-info-input hidden" />
           </div>
         </div>
         <div class="info-card">
           <img src="../../assets/pfp/ico-address.svg" alt="" class="info-icon"
           />
           <div>
-            <div>Address</div>
+            <label for="address">Address</label>
             <div>ABC Roooooooooooooooooooooooooooooooad, XYZ</div>
+            <input type="text" id="address" class="user-info-input hidden" />
           </div>
         </div>
         <div class="info-card">
           <img src="../../assets/pfp/ico-roll.svg" alt="" class="info-icon" />
           <div>
-            <div>College Roll Number</div>
+            <label for="rollNumber">College Roll Number</label>
             <div>703</div>
+            <input type="number" id="rollNumber" class="user-info-input hidden" />
           </div>
         </div>
         <div class="info-card">
           <img src="../../assets/pfp/ico-course.svg" alt="" class="info-icon" />
           <div>
-            <div>Course</div>
+            <label for="course">Course</label>
             <div>Computer Science B.Sc</div>
+            <input type="text" id="course" class="user-info-input hidden" />
           </div>
         </div>
 
         <div class="info-card">
           <img src="../../assets/pfp/ico-sem.svg" alt="" class="info-icon" />
           <div>
-            <div>Semester</div>
+            <label for="semester">Semester</label>
             <div>Fifth</div>
+            <input type="text" id="semester" class="user-info-input hidden" />
           </div>
         </div>
       </div>

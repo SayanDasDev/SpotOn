@@ -1,0 +1,31 @@
+.edit{
+    transition: all 0.5s ease-in-out;
+    background-position: center;
+    background-size: 200% auto;
+}
+
+.grad-bg{
+    background: var(--c-pfp-banner-bg);
+}
+
+.hidden{
+    display: none;
+}
+
+.banner .edit-page-text{
+    padding-top: 0;
+}
+
+.banner .edit-page-text > div:first-child{
+    display: none;
+}
+.banner .edit-page-text > div:last-child{
+    text-align: center;
+}
+
+.banner .center-positioned{
+    position: absolute;
+    top: min(15vh, 250px);
+    left: min(calc(50% - 50px), 250px);
+    transition: all 0.5s ease-in-out;
+}

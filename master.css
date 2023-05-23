@@ -11,6 +11,7 @@
   --c-shadow: #969696;
   --c-container-shadow: rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
   --c-btn-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  --c-pfp-banner-bg: linear-gradient(78.16deg, #36A2E8 37%, #9DD0FF 88.8%);
 }
 
 

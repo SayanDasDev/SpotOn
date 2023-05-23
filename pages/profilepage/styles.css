@@ -15,6 +15,7 @@ body{
 .banner{
     height: 25vh;
     max-height: 250px;
+    width: 100%;
     background: url(../../assets/pfp/img-pfp-banner.svg);
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -62,10 +63,27 @@ body{
     justify-content: space-between;
 }
 
+.nav #editSaveBtn{
+    height: 22.2px !important;
+    width: 22.2px !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.nav .edit-btn{
+    background-image: url(../../assets/pfp/ico-edit.svg);
+}
+.nav .save-btn{
+    background-image: url(../../assets/pfp/ico-save.svg);
+}
+
 .banner .user-info-brief{
     padding-top: 20px;
     padding-left: 10px;
     color: var(--white);
+    transition: all 0.5s ease-in-out;
 }
 
 .banner .user-info-brief div:first-child{
@@ -74,9 +92,11 @@ body{
     padding-bottom: 5px;
 }
 
-.banner .pf-pic-container{
+.banner .left-positioned{
     position: absolute;
+    top: min(12vh, 250px);
     left: min(60vw, 450px);
+    transition: all 0.5s ease-in-out;
 }
 
 .user-info-view{
@@ -108,16 +128,17 @@ body{
     max-width: 100%;
 }
 
-.user-info-view .info-card > div >div:first-child{
+.user-info-view .info-card > div >label{
     font-size: 0.75rem;
     color: var(--c-lebel-grey);
 }
 
-.user-info-view .info-card > div >div:last-child{
+.user-info-view .info-card > div >div{
     font-size: 1.05rem;
     font-weight: 600;
     width: 200px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    padding-top: 5px;
 }
