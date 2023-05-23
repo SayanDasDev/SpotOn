@@ -10,6 +10,7 @@ const completionPctg = document.getElementById("completionPctg");
 const username = document.getElementById("username");
 const usernameReloadBtn = document.getElementById("usernameReloadBtn");
 
+
 //setting the default content of input box and validation
 inputs.forEach((input) => {
   input.value = input.previousSibling.previousSibling.innerHTML;
@@ -69,6 +70,9 @@ editSaveBtn.addEventListener("click", () => {
   avatar.classList.toggle("left-positioned");
   avatar.classList.toggle("center-positioned");
 
+  //toggling the reload username button
+  usernameReloadBtn.classList.toggle("hidden");
+
   //toggling the input box
   inputs.forEach((input) => {
     input.previousSibling.previousSibling.classList.toggle("hidden");
@@ -85,4 +89,13 @@ editSaveBtn.addEventListener("click", () => {
     bannerHeading.textContent = username.innerHTML;
     getCompletionPctg(); //changing the completion percentage
   }
+});
+
+
+//rotating the username reload button on click
+var rot = 0;
+usernameReloadBtn.addEventListener('click', function() {
+  rot += 360;
+  usernameReloadBtn.style.transform = `rotate(${rot}deg)`;
+  console.log(rot);
 });

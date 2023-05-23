@@ -63,6 +63,10 @@ body{
     justify-content: space-between;
 }
 
+.nav #backBtnPfPage{
+    cursor: pointer;
+}
+
 .nav #editSaveBtn{
     height: 22.2px !important;
     width: 22.2px !important;
@@ -124,7 +128,6 @@ body{
     display: flex;
     align-items: center;
     overflow: visible !important;
-    cursor: pointer;
 }
 
 #usernameReloadBtn{
@@ -132,6 +135,8 @@ body{
     width: 20px;
     padding: 2.5px;
     margin-left: 10px;
+    cursor: pointer;
+    transition: transform 1s;
 }
 
 .user-info-view .info-card img{

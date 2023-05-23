@@ -72,7 +72,6 @@ input{
     transform: rotate(180deg);
 }
 
-
 .progress-val{
     display: flex;
     flex-direction: row;
@@ -90,4 +89,8 @@ input{
     color: white;
     font-size: 0.65rem;
     letter-spacing: 0.1rem;
+}
+
+.rotate {
+    transform: rotate(360deg);
 }
