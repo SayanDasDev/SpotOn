@@ -80,6 +80,8 @@ input{
     padding: 5px;
     transform: rotate(180deg);
     
+    position: absolute; 
+    top: -10px;
     width: fit-content;
     height: fit-content;
     
