@@ -83,11 +83,12 @@ body{
     padding-top: 20px;
     padding-left: 10px;
     color: var(--white);
+    font-size: 1.0005rem;
     transition: all 0.5s ease-in-out;
 }
 
 .banner .user-info-brief div:first-child{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 600;
     padding-bottom: 5px;
 }
@@ -126,6 +127,8 @@ body{
 .user-info-view .info-card > div{
     margin-left: 15px;
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .user-info-view .info-card > div >label{
@@ -134,7 +137,7 @@ body{
 }
 
 .user-info-view .info-card > div >div{
-    font-size: 1.05rem;
+    font-size: 1.0005rem;
     font-weight: 600;
     width: 200px;
     overflow: hidden;
