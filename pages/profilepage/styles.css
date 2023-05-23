@@ -82,6 +82,11 @@ body{
 .banner .user-info-brief{
     padding-top: 20px;
     padding-left: 10px;
+    width: 60%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* border: 1px solid red; */
     color: var(--white);
     font-size: 1.0005rem;
     transition: all 0.5s ease-in-out;
@@ -115,13 +120,27 @@ body{
     width: 100%;
 }
 
+.user-info-view .info-card:first-child >div>div{
+    display: flex;
+    align-items: center;
+    overflow: visible !important;
+    cursor: pointer;
+}
+
+#usernameReloadBtn{
+    height: 20px;
+    width: 20px;
+    padding: 2.5px;
+    margin-left: 10px;
+}
+
 .user-info-view .info-card img{
     width: 50px;
     height: 50px;
     padding: 15px;
     background-color: var(--c-icon-light-blue);
     border-radius: 12px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: var(--c-icon-shadow);
 }
 
 .user-info-view .info-card > div{

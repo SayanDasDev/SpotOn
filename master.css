@@ -7,11 +7,16 @@
   --c-accent-light-blue: #2EA7FF;
   --c-accent-dark-blue: #425FEC;
   --c-lebel-grey: #ADADAD;
-  --c-icon-light-blue: #C3E5FF;
   --c-shadow: #969696;
   --c-container-shadow: rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
   --c-btn-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  
+  /*profile page*/
   --c-pfp-banner-bg: linear-gradient(78.16deg, #36A2E8 37%, #9DD0FF 88.8%);
+  --c-pfp-avatar-bg: #65C9FF;
+  --c-pfp-progress-bar: #425FEC;
+  --c-icon-light-blue: #C3E5FF;
+  --c-icon-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 
@@ -188,7 +193,7 @@ input::-webkit-outer-spin-button {
   color: var(--white);
   justify-content: center;
   background-color: var(--c-accent-light-blue);
-  border: 1px solid black;
+  border: 1px solid var(--black);
   border-radius: 5px;
   padding: 5px min(20px, 2.5vw);
   font-size: 15px;
