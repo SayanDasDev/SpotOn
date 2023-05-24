@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+ 
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    padding: 60px;
+}
+
+.notif-container{
+    background-color: #444444;
+    display: flex;
+    color: white;
+    width: fit-content;
+    border-radius: 50px;
+    border: 1px solid black;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    transition: transform 0.6s ease-out;
+    left: 30px;
+    bottom: 20px;
+    transform: translateY(90px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.notif-container.isShown {
+    transform: translateY(-30px);
+  }
+
+.notif-content{
+    display: flex;
+}
+
+.notif-icon{
+    background-color: #EDEDED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+;
+}
+
+.notif-icon.successful{
+    background-image: url(../../assets/ico-success.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.notif-icon.failure{
+    background-image: url(../../assets/ico-fail.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.notif-text{
+    margin: 0 5px;
+}
+
+.notif-dismiss{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.notif-icon > img{
+    height: 50%;
+}
