@@ -97,5 +97,4 @@ var rot = 0;
 usernameReloadBtn.addEventListener('click', function() {
   rot += 360;
   usernameReloadBtn.style.transform = `rotate(${rot}deg)`;
-  console.log(rot);
 });
