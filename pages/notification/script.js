@@ -8,10 +8,6 @@ const Msg = document. querySelector('.notif-text');
 
 const showNotifBar = (autohide) => {
   notifBar.classList.add("isShown");
- 
-  if (autohide) {
-    setTimeout(hideNotifBar, 2000);
-  }
 };
 
 const hideNotifBar = () => {
@@ -24,11 +20,15 @@ successBtn.addEventListener('click', function () {
   Icon.classList.remove("failure");
   Icon.classList.add("successful");
   Msg.innerHTML = 'OTP Sent Succesfully!';
+  setTimeout(hideNotifBar, 2000);
 });
 failBtn.addEventListener('click', function () {
   showNotifBar();
   Icon.classList.remove("successful");
   Icon.classList.add("failure");
   Msg.innerHTML = 'OTP is Wrong!';
+  setTimeout(hideNotifBar, 2000);
+  
 });
+
 dismissBtn.addEventListener('click', hideNotifBar);
