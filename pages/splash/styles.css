@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    background: #EEF8FE;
+}
+
+lottie-player{
+    margin: auto;
+}
