@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../master.css" />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./extrastyles.css" />
+    <link rel="stylesheet" href="./muliSelectStyles.css" />
   </head>
   <body>
     <div class="pf-page-contianer">
@@ -42,7 +43,7 @@
               <div id="username">RollsRoyce69</div>
               <img
                 id="usernameReloadBtn"
-                class = "hidden"
+                class="hidden"
                 src="../../assets/pfp/ico-username-reload.svg"
                 alt=""
               />
@@ -92,22 +93,41 @@
         <div class="info-card">
           <img src="../../assets/pfp/ico-course.svg" alt="" class="info-icon" />
           <div>
-            <label for="course">Course</label>
-            <div>Computer Science B.Sc</div>
-            <input type="text" id="course" class="user-info-input hidden" />
-          </div>
-        </div>
-
-        <div class="info-card">
-          <img src="../../assets/pfp/ico-sem.svg" alt="" class="info-icon" />
-          <div>
-            <label for="semester">Semester</label>
-            <div>Fifth</div>
-            <input type="text" id="semester" class="user-info-input hidden" />
+            <label for="courses">Courses</label>
+            <select name="courses" id="courses" multiple>
+              <option value="1">CMSA CC-I</option>
+              <option value="2">CMSA CC-II</option>
+              <option value="3">CMSA CC-III</option>
+              <option value="4">CMSA CC-IV</option>
+              <option value="5">CMSA CC-V</option>
+              <option value="6">CMSA CC-VI</option>
+              <option value="7">CMSA CC-VII</option>
+              <option value="8">CMSA CC-VIII</option>
+              <option value="9">CMSA CC-IX</option>
+              <option value="10">CMSA CC-X</option>
+              <option value="11">CMSA CC-XI</option>
+              <option value="12">CMSA CC-XII</option>
+              <option value="13">CMSA CC-XIII</option>
+              <option value="14">CMSA CC-XIV</option>
+              <option value="15">AECC-I</option>
+              <option value="16">AECC-II</option>
+              <option value="17">GE-I</option>
+              <option value="18">GE-II</option>
+              <option value="19">GE-III</option>
+              <option value="20">GE-IV</option>
+              <option value="21">DSE-I</option>
+              <option value="22">DSE-II</option>
+              <option value="23">DSE-III</option>
+              <option value="24">DSE-IV</option>
+            </select>
           </div>
         </div>
       </div>
     </div>
     <script src="./script.js"></script>
+    <script src="./multiSelectScript.js"></script>
+    <script>
+      new MultiSelectTag('courses')
+  </script>
   </body>
 </html>
