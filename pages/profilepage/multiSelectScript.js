@@ -63,6 +63,8 @@ function MultiSelectTag (el, customs = {shadow: false, rounded:true}) {
         // .multi-select-tag
         customSelectContainer = document.createElement('div')
         customSelectContainer.classList.add('mult-select-tag')
+        customSelectContainer.classList.add('hidden')
+        customSelectContainer.setAttribute('id', 'multiple-select');
 
         // .container
         wrapper = document.createElement('div')
@@ -126,7 +128,6 @@ function MultiSelectTag (el, customs = {shadow: false, rounded:true}) {
         customSelectContainer.appendChild(wrapper)
         customSelectContainer.appendChild(drawer)
 
-        // Place TailwindTagSelection after the element
         if (element.nextSibling) {
             element.parentNode.insertBefore(customSelectContainer, element.nextSibling)
         }

@@ -40,7 +40,7 @@
           <div>
             <label>Username</label>
             <div>
-              <div id="username">RollsRoyce69</div>
+              <div id="username" class="cred">RollsRoyce69</div>
               <img
                 id="usernameReloadBtn"
                 class="hidden"
@@ -54,7 +54,7 @@
           <img src="../../assets/pfp/ico-name.svg" alt="" class="info-icon" />
           <div>
             <label for="name">Name</label>
-            <div>Sayan Das</div>
+            <div class="cred">Sayan Das</div>
             <input type="text" id="name" class="user-info-input hidden" />
           </div>
         </div>
@@ -62,7 +62,7 @@
           <img src="../../assets/pfp/ico-email.svg" alt="" class="info-icon" />
           <div>
             <label for="email">E-mail</label>
-            <div>rolls.royce@69.com</div>
+            <div class="cred">rolls.royce@69.com</div>
             <input type="email" id="email" class="user-info-input hidden" />
           </div>
         </div>
@@ -74,7 +74,7 @@
           />
           <div>
             <label for="address">Address</label>
-            <div>ABC Roooooooooooooooooooooooooooooooad, XYZ</div>
+            <div class="cred"></div>
             <input type="text" id="address" class="user-info-input hidden" />
           </div>
         </div>
@@ -82,7 +82,7 @@
           <img src="../../assets/pfp/ico-roll.svg" alt="" class="info-icon" />
           <div>
             <label for="rollNumber">College Roll Number</label>
-            <div>703</div>
+            <div class="cred"></div>
             <input
               type="number"
               id="rollNumber"
@@ -94,7 +94,8 @@
           <img src="../../assets/pfp/ico-course.svg" alt="" class="info-icon" />
           <div>
             <label for="courses">Courses</label>
-            <select name="courses" id="courses" multiple>
+            <div class="cred" id="coursesEnrolled"></div>
+            <select class="hidden" name="courses" id="courses" multiple>
               <option value="1">CMSA CC-I</option>
               <option value="2">CMSA CC-II</option>
               <option value="3">CMSA CC-III</option>
@@ -124,10 +125,10 @@
         </div>
       </div>
     </div>
-    <script src="./script.js"></script>
     <script src="./multiSelectScript.js"></script>
     <script>
       new MultiSelectTag('courses')
-  </script>
+      </script>
+    <script src="./script.js"></script>
   </body>
 </html>

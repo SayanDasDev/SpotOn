@@ -122,6 +122,11 @@ body{
     overflow: visible !important;
 }
 
+#username{
+    font-size: 1.0005rem;
+    font-weight: 600;
+}
+
 #usernameReloadBtn{
     height: 20px;
     width: 20px;
@@ -156,9 +161,9 @@ body{
     font-size: 1.0005rem;
     font-weight: 600;
     width: min(60vw, 400px) !important;
-    overflow: hidden;
+    /* overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; */
     padding-top: 5px;
 }
 
