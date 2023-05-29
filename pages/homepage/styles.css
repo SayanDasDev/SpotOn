@@ -55,12 +55,11 @@ body{
 .top{
     width: 100%;
     padding: 20px;
-    padding-left: 30px;
 }
 
 .top .profile>img{
     background-color: var(--c-pfp-avatar-bg);
-    width: 64px;
+    width: 48px;
     border-radius: 50%;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -73,11 +72,11 @@ body{
 }
 
 .mid .greetings{
-    font-size: 1.15rem;
+    font-size: 1.25rem;
 }
 
 .mid .greetings #name{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
@@ -85,4 +84,5 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    width: 
 }

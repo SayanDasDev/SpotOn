@@ -17,7 +17,7 @@
 }
 
 .page .login-signup-txt{
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 a{
@@ -28,4 +28,9 @@ a{
 
 #forgot{
     font-size: 0.75rem !important;
+}
+
+#loginBtn{
+    width: 60% !important;
+    padding: 10px 0;
 }
