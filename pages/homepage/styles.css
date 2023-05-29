@@ -1,0 +1,42 @@
+body{
+    background: url(../../assets/splash/bg.svg);
+    box-sizing: border-box !important;
+}
+
+.navbar-container{
+    background-color: var(--c-navbar-bg);
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 16px;
+}
+
+.nav-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-icon{
+    padding-top: 4px;
+    height: 24px;
+}
+.nav-button.active::before{
+    content: "";
+    background-color: var(--c-navbar-icon-active-indicator);
+    height: 32px;
+    width: 64px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50rem;
+}
+
+.nav-label{
+    padding-top: 4px;
+    font-size: 0.8rem;
+    color: var(--c-navbar-icon-active);
+}

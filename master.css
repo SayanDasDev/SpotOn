@@ -18,6 +18,11 @@
   --c-pfp-progress-bar: #425FEC;
   --c-icon-light-blue: #C3E5FF;
   --c-icon-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  /*homepage*/
+  --c-navbar-bg: #E1F2FF;
+  --c-navbar-icon-active: #477B9F;
+  --c-navbar-icon-active-indicator: #B1E4FB;
 }
 
 
@@ -217,4 +222,8 @@ input::-webkit-outer-spin-button {
 
 .form-outer .form .page .btns button{
   margin: 5px 10px 0 10px;
+}
+
+.hidden{
+  display: none;
 }
