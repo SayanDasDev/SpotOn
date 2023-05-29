@@ -6,7 +6,7 @@ body{
 .container{
     height: 100vh;
     display: flex;
-    background: url(../../assets/splash/bg.svg);
+    background: #EEF8FE;
 }
 
 lottie-player{
