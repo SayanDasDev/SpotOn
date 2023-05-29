@@ -1,11 +1,13 @@
 body{
     background: url(../../assets/splash/bg.svg);
-    box-sizing: border-box !important;
+    display: block;
 }
 
+/* navbar styles */
 .navbar-container{
     background-color: var(--c-navbar-bg);
     width: 100vw;
+    height: 80px;
     display: flex;
     position: fixed;
     bottom: 0;
@@ -19,12 +21,14 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
 
 .nav-icon{
     padding-top: 4px;
     height: 24px;
 }
+
 .nav-button.active::before{
     content: "";
     background-color: var(--c-navbar-icon-active-indicator);
@@ -39,4 +43,46 @@ body{
     padding-top: 4px;
     font-size: 0.8rem;
     color: var(--c-navbar-icon-active);
+}
+
+/* top styles */
+.homepage-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    width: 100%;
+    padding: 20px;
+    padding-left: 30px;
+}
+
+.top .profile>img{
+    background-color: var(--c-pfp-avatar-bg);
+    width: 64px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/*mid styles */
+.mid{
+    width: 100%;
+    padding: 0 20px;
+}
+
+.mid .greetings{
+    font-size: 1.15rem;
+}
+
+.mid .greetings #name{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.mid .cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }

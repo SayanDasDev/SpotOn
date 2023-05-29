@@ -25,6 +25,10 @@
   --c-navbar-icon-active-indicator: #B1E4FB;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 
 body {
   box-sizing: border-box;
