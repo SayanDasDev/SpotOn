@@ -55,12 +55,35 @@ body{
 .top{
     width: 100%;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    font-size: 0.9rem;
+    color: var(--c-navbar-icon-active);
+}
+
+.location>img{
+    width: 20px;
+    padding-right: 5px;
+}
+
+.location>div{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .top .profile>img{
     background-color: var(--c-pfp-avatar-bg);
     width: 48px;
     border-radius: 50%;
+    /* border: 1px solid var(--black); */
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -80,9 +103,43 @@ body{
     font-weight: 600;
 }
 
-.mid .cards{
+.mid .time-card{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 
+    border: 1px solid var(--black);
+    border-radius: 12px;
+    padding: 5px;
+    width: min(95%, 600px);
+    margin: 20px auto;
+    background-color: var(--time-card-bg);
+}
+
+.mid .time-card > img:first-child{
+    margin-left: 10px;
+    width: 24px;
+}
+
+.mid .time-card > img:last-child{
+    margin-left: auto !important;
+    margin-right: 10px;
+}
+
+.mid .time-card > div{
+    margin-left: 10px;
+    color: var(--c-navbar-icon-active);
+}
+
+.mid .time-card > div > div:first-child{
+    font-weight: 600;
+    padding-bottom: 5px;
+    color: var(--black);
+}
+
+/*bottom styles */
+.bottom{
+    padding: 0 20px;
+}
+
+.bottom > div:first-child{
+    font-weight: 600;
 }
