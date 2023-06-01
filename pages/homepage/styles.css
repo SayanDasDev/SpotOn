@@ -140,7 +140,7 @@ body{
 
 /*bottom styles */
 .bottom{
-    padding: 0 20px;
+    padding: 0 25px;
 }
 
 .bottom > div:first-child{
@@ -151,14 +151,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 20px auto;
+    margin: 25px auto;
 }
 
 .class-card-content{
     border-radius: 12px;
     border: 1px solid var(--black);
     padding: 20px 15px;
-    width: 250px;
+    width: 3000px;
     margin-left: 10px;
     overflow: hidden;
     white-space: nowrap;
@@ -176,6 +176,13 @@ body{
     .class-card-content{
         width: 750px;
     }
+}
+
+.class-card.ongoing{
+    scale: 1.05;
+}
+.class-card.ongoing img{
+    scale: 1.05;
 }
 
 .class-card.over .class-card-content{
