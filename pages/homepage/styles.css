@@ -1,6 +1,7 @@
 body{
     background: url(../../assets/splash/bg.svg);
     display: block;
+    padding-bottom: 80px;
 }
 
 /* navbar styles */
@@ -125,11 +126,13 @@ body{
 }
 
 .mid .time-card > div{
+    font-size: 1.05rem;
     margin-left: 10px;
     color: var(--c-navbar-icon-active);
 }
 
 .mid .time-card > div > div:first-child{
+    font-size: 1.15rem;
     font-weight: 600;
     padding-bottom: 5px;
     color: var(--black);
@@ -142,4 +145,55 @@ body{
 
 .bottom > div:first-child{
     font-weight: 600;
+}
+
+.class-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.class-card-content{
+    border-radius: 12px;
+    border: 1px solid var(--black);
+    padding: 20px 15px;
+    width: 250px;
+    margin-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .class-card-content{
+        width: 500px;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .class-card-content{
+        width: 750px;
+    }
+}
+
+.class-card.over .class-card-content{
+    background-color: var(--c-class-over);
+}
+.class-card.ongoing .class-card-content{
+    background-color: var(--c-class-ongoing);
+}
+.class-card.upcoming .class-card-content{
+    background-color: var(--c-class-upcoming);
+}
+
+
+#courseCode{
+    font-weight: 600;
+}
+
+#teacherName{
+    font-size: 0.95rem;
+    padding-top: 4px;
 }
