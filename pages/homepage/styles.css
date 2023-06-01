@@ -166,6 +166,10 @@ body{
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+    .bottom{
+        padding: 0 50px;
+    }
+    
     .class-card-content{
         width: 500px;
     }
@@ -173,6 +177,10 @@ body{
 }
 
 @media (min-width: 768px) {
+    .bottom{
+        padding: 0 50px;
+    }
+
     .class-card-content{
         width: 750px;
     }
