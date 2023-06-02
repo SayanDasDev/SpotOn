@@ -188,11 +188,20 @@ body{
 }
 
 .class-card.ongoing{
-    scale: 1.05;
+    animation: breathing 2s ease-in-out infinite;
 }
-.class-card.ongoing img{
-    scale: 1.05;
-}
+
+@keyframes breathing {
+    0% {
+      transform: scale(1.05);
+    }
+    50% {
+      transform: scale(1.06);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
 
 .class-card.over .class-card-content{
     background-color: var(--c-class-over);
