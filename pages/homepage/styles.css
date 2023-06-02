@@ -146,13 +146,14 @@ body{
 
 .bottom > div:first-child{
     font-weight: 600;
+    margin: 20px 0 40px 0;
 }
 
 .class-card{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin: 25px auto;
+    justify-content: center;
+    margin: 25px 0;
 }
 
 .class-card-content{
@@ -170,11 +171,18 @@ body{
     .bottom{
         padding: 0 50px;
     }
-    
+
     .class-card-content{
         width: 500px;
     }
-    
+    .mid{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .mid .time-card{
+        margin: 20px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -184,6 +192,15 @@ body{
 
     .class-card-content{
         width: 750px;
+    }
+
+    .mid{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .mid .time-card{
+        margin: 20px;
     }
 }
 
