@@ -16,6 +16,7 @@ body{
     align-items: center;
     padding-top: 12px;
     padding-bottom: 16px;
+    border-radius: 20px 20px 0 0;
 }
 
 .nav-button{
@@ -44,14 +45,6 @@ body{
     padding-top: 4px;
     font-size: 0.8rem;
     color: var(--c-navbar-icon-active);
-}
-
-.navbar-container{
-    border-radius: 20px 20px 0 0;
-    background-color: #B0DDFF;
-}
-.nav-button.active::before{
-    background-color: #DAF2FF;
 }
 
 /* top styles */
