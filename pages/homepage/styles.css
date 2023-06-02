@@ -46,6 +46,14 @@ body{
     color: var(--c-navbar-icon-active);
 }
 
+.navbar-container{
+    border-radius: 20px 20px 0 0;
+    background-color: #B0DDFF;
+}
+.nav-button.active::before{
+    background-color: #DAF2FF;
+}
+
 /* top styles */
 .homepage-container{
     width: 100vw;
@@ -70,7 +78,7 @@ body{
 }
 
 .location>img{
-    width: 20px;
+    width: 25px;
     padding-right: 5px;
 }
 
