@@ -2,8 +2,12 @@ body{
     background: url(../../assets/splash/bg.svg);
     display: block;
     padding-bottom: 80px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
-
+body::-webkit-scrollbar{
+    display: none;
+}
 /* navbar styles */
 .navbar-container{
     background-color: var(--c-navbar-bg);
@@ -103,6 +107,7 @@ body{
 .mid .greetings #name{
     font-size: 2rem;
     font-weight: 600;
+    padding-bottom: 5px;
 }
 
 .mid .time-card{
@@ -167,7 +172,7 @@ body{
     text-overflow: ellipsis;
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px){
     .bottom{
         padding: 0 50px;
     }
@@ -182,25 +187,13 @@ body{
     }
     .mid .time-card{
         margin: 20px;
+        width: min(70%, 500px);
     }
 }
 
 @media (min-width: 768px) {
-    .bottom{
-        padding: 0 50px;
-    }
-
     .class-card-content{
         width: 750px;
-    }
-
-    .mid{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .mid .time-card{
-        margin: 20px;
     }
 }
 
