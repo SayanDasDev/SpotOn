@@ -12,6 +12,13 @@
     flex-direction: column;
 }
 
+.attendance-container #backbtn{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
 .top >img{
     height: 20vh;
     margin: 40px 20px 0 auto;
