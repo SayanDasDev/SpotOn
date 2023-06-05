@@ -1,0 +1,54 @@
+body{
+    background: url(../../assets/splash/bg.svg);
+    display: block;
+    padding-bottom: 80px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/* navbar styles */
+.navbar-container{
+    background-color: var(--c-navbar-bg);
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 16px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.nav-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-icon{
+    padding-top: 4px;
+    height: 24px;
+}
+
+.nav-button.active::before{
+    content: "";
+    background-color: var(--c-navbar-icon-active-indicator);
+    height: 32px;
+    width: 64px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50rem;
+}
+
+.nav-label{
+    padding-top: 4px;
+    font-size: 0.8rem;
+    color: var(--c-navbar-icon-active);
+}

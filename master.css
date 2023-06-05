@@ -1,6 +1,6 @@
 :root{
-  --white: #FFFFFF;
-  --black: #000000;
+  --white: #FBFBFB;
+  --black: #020202;
   --c-form-input: #F5F7FF;
   --c-form-input-gradient: -webkit-linear-gradient(270deg, #FFFFFF 50%, #F5F7FF 50%);
   --c-main-bg: #EEF8FE;
@@ -27,6 +27,9 @@
   --c-class-over: #FFDAD5;
   --c-class-ongoing: #FAF0CC;
   --c-class-upcoming: #F0FFE5;
+
+  /*attendance page*/
+  --c-attendance-accent: #477B9F;
 }
 
 *{
@@ -44,6 +47,7 @@ body {
   margin: 0;
   padding: 0;
   background: url('./assets/bg-pattern.svg'), var(--c-main-bg);
+  color: var(--black);
 }
 
 .container{
