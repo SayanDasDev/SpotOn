@@ -182,7 +182,7 @@ body {
     background: var(--c-attendance-accent-light);
     border-radius: 6px;
     padding: 15px;
-    margin: 18px 10px;
+    margin: 18px 5px;
     width: 300px;
 }
 
@@ -222,8 +222,8 @@ body {
     background: url(../../assets/history/img-absent.svg);
 }
 
-@media screen and (min-width: 600px){
+@media (min-width: 600px){
     .history-wrapper{
-        width: 40%;
+        width: 200px;
     }
 }
