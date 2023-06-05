@@ -36,60 +36,6 @@ body {
     width: fit-content;
 }
 
-/*Select styles*/
-/* select {
-    appearance: none;
-    background-color: transparent;
-    border: none;
-    padding: 0 1em 0 0;
-    margin: 0;
-    width: 100%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 0.625rem;
-    cursor: inherit;
-    line-height: inherit;
-    outline: none;
-    text-overflow: ellipsis;
-}
-select::-ms-expand {
-    display: none;
-}
-
-.select-class {
-    border-radius: 4px;
-    padding: 6px 5px 5px 10px;
-    cursor: pointer;
-    background-color: var(--c-select-bg);
-    box-shadow: var(--c-select-shadow);
-    display: flex;
-    position: relative;
-}
-
-.select-class::after {
-    content: "";
-    width: 0.8em;
-    height: 0.625em;
-    background-color: var(--black);
-    clip-path: polygon(20% 15%, 0% 35%, 50% 85%, 100% 35%, 80% 15%, 50% 45%);
-  }
-
-  select:focus + .focus {
-    position: absolute;
-    top: -1px;
-    left: -1px;
-    right: -1px;
-    bottom: -1px;
-    border: 1px solid var(--black);
-    border-radius: inherit;
-  }
-
-  .line{
-    position: relative;
-    width: 1px;
-    left: -5px;
-    background-color: #8a8a8a;
-  } */
-
 .dropdown {
     position: relative;
     display: inline-block;
@@ -220,20 +166,24 @@ select::-ms-expand {
 }
 
 .attendance-details .details .detail-wrapper .detail-label{
-    font-size: 0.6rem;
+    font-size: 0.75rem;
     color: var(--c-attendance-accent);
 }
 
 /*History Section styles */
 .attendance-history .history-content{
     padding: 20px 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
 }
 
 .attendance-history .history-content .history-wrapper{
     background: var(--c-attendance-accent-light);
     border-radius: 6px;
     padding: 15px;
-    margin: 18px 0;
+    margin: 18px 10px;
+    width: 300px;
 }
 
 .attendance-history .history-content .history-wrapper > div:first-child{
@@ -247,7 +197,7 @@ select::-ms-expand {
 }
 
 .attendance-history .history-content .history-wrapper .date{
-    font-size: 1.15rem;
+    font-size: 0.9rem;
     font-weight: 600;
 }
 
@@ -257,10 +207,6 @@ select::-ms-expand {
     width: 75px;
     height: 20px;
     background-repeat: no-repeat;
-}
-
-.attendance-history .history-content .history-wrapper .class-name{
-    font-size: 1.05rem;
 }
 
 .attendance-history .history-content .history-wrapper .teacher-name{
@@ -274,4 +220,10 @@ select::-ms-expand {
 
 .absent > div > #state{
     background: url(../../assets/history/img-absent.svg);
+}
+
+@media screen and (min-width: 600px){
+    .history-wrapper{
+        width: 40%;
+    }
 }
