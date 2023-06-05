@@ -30,9 +30,22 @@
 
   /*attendance page*/
   --c-attendance-accent: #477B9F;
+
+  /*attendance history*/
+  --c-attendance-accent-light: rgba(71, 123, 159, 0.5);
+  --section-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  --c-present-bg: rgba(0, 101, 59, 0.5);
+  --c-present-text: #A3FFE7;
+  --c-absent-bg: #825D66;
+  --c-absent-text: #FFA3A3;
+  --c-select-bg: #EBEBEB;
+  --c-select-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+  --c-dropdown-div: #f1f1f1;
 }
 
-*{
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 

@@ -1,0 +1,277 @@
+body {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.section {
+    width: 90vw;
+    margin: 20px 0;
+    background: var(--white);
+    box-shadow: var(--section-shadow);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.section .header {
+    display: flex;
+    align-items: center;
+}
+
+.bar {
+    height: 25px;
+    width: 4px;
+    background-color: var(--c-attendance-accent);
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+.section .header>div {
+    font-weight: 600;
+    font-size: 1.15rem;
+}
+
+.section .header>div:last-child {
+    margin-left: auto;
+    width: fit-content;
+}
+
+/*Select styles*/
+/* select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.625rem;
+    cursor: inherit;
+    line-height: inherit;
+    outline: none;
+    text-overflow: ellipsis;
+}
+select::-ms-expand {
+    display: none;
+}
+
+.select-class {
+    border-radius: 4px;
+    padding: 6px 5px 5px 10px;
+    cursor: pointer;
+    background-color: var(--c-select-bg);
+    box-shadow: var(--c-select-shadow);
+    display: flex;
+    position: relative;
+}
+
+.select-class::after {
+    content: "";
+    width: 0.8em;
+    height: 0.625em;
+    background-color: var(--black);
+    clip-path: polygon(20% 15%, 0% 35%, 50% 85%, 100% 35%, 80% 15%, 50% 45%);
+  }
+
+  select:focus + .focus {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    border: 1px solid var(--black);
+    border-radius: inherit;
+  }
+
+  .line{
+    position: relative;
+    width: 1px;
+    left: -5px;
+    background-color: #8a8a8a;
+  } */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    font-size: 0.75rem;
+    font-weight: 400;
+    font-family: Georgia;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: var(--c-attendance-accent-light);
+    box-shadow: var(--c-select-shadow);
+}
+
+.dropbtn > img{
+    padding-right: 7px;
+    height: 15px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content div {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.dropdown-content div:hover {
+    background-color: var(--c-dropdown-div);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+    background-color: var(--c-attendance-accent);
+}
+
+/*info section styles*/
+.attendance-details .info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 40px 0;
+}
+
+.attendance-details .info .img-wrapper {
+    width: 64px;
+    height: 64px;
+    background-color: var(--c-attendance-accent-light);
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.attendance-details .info .info-content .student-name{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.attendance-details .info .info-content >div:last-child{
+    display: flex;
+}
+.attendance-details .info .info-content >div:last-child > div{
+    margin: 0 5px;
+}
+
+.attendance-details .info .info-content .info-label{
+    font-size: 0.75rem;
+    padding-bottom: 5px;
+}
+
+.attendance-details .info .info-content .info-val{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.attendance-details .details{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.attendance-details .details .detail-wrapper{
+    width: min(100%, 200px);
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    background: var(--c-attendance-accent-light);
+    border-radius: 6px;
+}
+
+.attendance-details .details .detail-wrapper:first-child{
+    margin-right: 5px;
+}
+.attendance-details .details .detail-wrapper:last-child{
+    margin-left: 5px;
+}
+
+.attendance-details .details .detail-wrapper div{
+    margin-left: 5px;
+}
+
+.attendance-details .details .detail-wrapper .detail-val{
+    font-size: 1.15rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.attendance-details .details .detail-wrapper .detail-label{
+    font-size: 0.6rem;
+    color: var(--c-attendance-accent);
+}
+
+/*History Section styles */
+.attendance-history .history-content{
+    padding: 20px 10px;
+}
+
+.attendance-history .history-content .history-wrapper{
+    background: var(--c-attendance-accent-light);
+    border-radius: 6px;
+    padding: 15px;
+    margin: 18px 0;
+}
+
+.attendance-history .history-content .history-wrapper > div:first-child{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.attendance-history .history-content .history-wrapper > div:first-child > img{
+    margin-right: 5px;
+}
+
+.attendance-history .history-content .history-wrapper .date{
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.attendance-history .history-content .history-wrapper #state{
+    margin-left: auto;
+    background-size: contain;
+    width: 75px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+
+.attendance-history .history-content .history-wrapper .class-name{
+    font-size: 1.05rem;
+}
+
+.attendance-history .history-content .history-wrapper .teacher-name{
+    font-size: 0.9rem;
+    padding-top: 4px;
+}
+
+.present > div > #state{
+    background: url(../../assets/history/img-present.svg);
+}
+
+.absent > div > #state{
+    background: url(../../assets/history/img-absent.svg);
+}
