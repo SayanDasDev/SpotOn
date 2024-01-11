@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ProfilePage</title>
-    <link rel="stylesheet" href="../../master.css" />
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./extrastyles.css" />
-    <link rel="stylesheet" href="../../muliSelectStyles.css" />
+    <title>ProfilePage Edit</title>
+    <link rel="stylesheet" href="../../../master.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../extrastyles.css" />
+    <link rel="stylesheet" href="../../../muliSelectStyles.css" />
   </head>
   <body>
     <div class="pf-page-contianer">
       <div class="banner">
         <div class="nav">
           <div id="backBtnPfPage">
-            <img src="../../assets/pfp/ico-back.svg" alt="" />
+            <img src="../../../assets/pfp/ico-back.svg" alt="" />
           </div>
           <div id="editSaveBtn" class="edit-btn"></div>
         </div>
@@ -25,7 +25,11 @@
         </div>
         <div id="pf-pic-container" class="left-positioned">
           <div class="inner">
-            <img src="../../assets/pfp/img-avatar.svg" alt="" class="avatar" />
+            <img
+              src="../../../assets/pfp/img-avatar.svg"
+              alt=""
+              class="avatar"
+            />
           </div>
           <div id="completionPctg" class="progress-val">100%</div>
         </div>
@@ -33,7 +37,7 @@
       <div class="user-info-view">
         <div class="info-card">
           <img
-            src="../../assets/pfp/ico-username.svg"
+            src="../../../assets/pfp/ico-username.svg"
             alt=""
             class="info-icon"
           />
@@ -43,59 +47,73 @@
               <div id="username" class="cred">RollsRoyce69</div>
               <img
                 id="usernameReloadBtn"
-                class="hidden"
-                src="../../assets/pfp/ico-username-reload.svg"
+                class=""
+                src="../../../assets/pfp/ico-username-reload.svg"
                 alt=""
               />
             </div>
           </div>
         </div>
         <div class="info-card">
-          <img src="../../assets/pfp/ico-name.svg" alt="" class="info-icon" />
+          <img
+            src="../../../assets/pfp/ico-name.svg"
+            alt=""
+            class="info-icon"
+          />
           <div>
             <label for="name">Name</label>
-            <div class="cred">Sayan Das</div>
-            <input type="text" id="name" class="user-info-input hidden" />
-          </div>
-        </div>
-        <div class="info-card">
-          <img src="../../assets/pfp/ico-email.svg" alt="" class="info-icon" />
-          <div>
-            <label for="email">E-mail</label>
-            <div class="cred">rolls.royce@69.com</div>
-            <input type="email" id="email" class="user-info-input hidden" />
+            <input type="text" id="name" class="user-info-input" />
           </div>
         </div>
         <div class="info-card">
           <img
-            src="../../assets/pfp/ico-address.svg"
+            src="../../../assets/pfp/ico-email.svg"
+            alt=""
+            class="info-icon"
+          />
+          <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" class="user-info-input" />
+          </div>
+        </div>
+        <div class="info-card">
+          <img
+            src="../../../assets/pfp/ico-address.svg"
             alt=""
             class="info-icon"
           />
           <div>
             <label for="address">Address</label>
             <div class="cred"></div>
-            <input type="text" id="address" class="user-info-input hidden" />
+            <input type="text" id="address" class="user-info-input" />
           </div>
         </div>
         <div class="info-card">
-          <img src="../../assets/pfp/ico-roll.svg" alt="" class="info-icon" />
+          <img
+            src="../../../assets/pfp/ico-roll.svg"
+            alt=""
+            class="info-icon"
+          />
           <div>
             <label for="rollNumber">College Roll Number</label>
             <div class="cred"></div>
             <input
               type="number"
               id="rollNumber"
-              class="user-info-input hidden"
+              class="user-info-input"
             />
           </div>
         </div>
         <div class="info-card">
-          <img src="../../assets/pfp/ico-course.svg" alt="" class="info-icon" />
+          <img
+            src="../../../assets/pfp/ico-course.svg"
+            alt=""
+            class="info-icon"
+          />
           <div>
             <label for="courses">Courses</label>
             <div class="cred" id="coursesEnrolled"></div>
-            <select class="hidden" name="courses" id="courses" multiple>
+            <select name="courses" id="courses" multiple>
               <option value="1">CMSA CC-I</option>
               <option value="2">CMSA CC-II</option>
               <option value="3">CMSA CC-III</option>
@@ -125,11 +143,5 @@
         </div>
       </div>
     </div>
-    <script src="../../multiSelectScript.js"></script>
-    <script>
-      new MultiSelectTag('courses')
-    </script>
-    <script src="./script.js"></script>
-    <script src="./completionPercent.js"></script>
   </body>
 </html>

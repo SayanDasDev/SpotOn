@@ -1,0 +1,158 @@
+body{
+    background: url(../../assets/pfp/img-pfp-bg.svg);
+    min-height: fit-content !important;
+}
+
+*{
+    box-sizing: border-box !important;
+}
+
+.pf-page-contianer{
+    width: 100vw;
+    max-width: 600px;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+}
+
+.pf-page-contianer::-webkit-scrollbar {
+    display: none;
+  }
+
+.banner{
+    height: 25vh;
+    max-height: 250px;
+    width: 100%;
+    background: url(../../assets/pfp/img-pfp-banner.svg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    padding: 20px 20px 0 20px;
+    transition: all 0.5s ease-in-out;
+    filter: drop-shadow(0px 0px 4px var(--c-shadow));
+}
+
+@media only screen and (min-width: 600px){
+    .banner{
+        background: var(--c-pfp-banner-bg);
+        transition: all 0.5s ease-in-out;
+        
+    }
+    .pf-page-contianer{
+        height: fit-content;
+        background-color: var(--white);
+        margin: 50px;
+        border-radius: 25px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        overflow-x: hidden;
+    }
+
+
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav #backBtnPfPage{
+    cursor: pointer;
+}
+
+.nav #editBtn, #saveBtn{
+    height: 22.2px !important;
+    width: 22.2px !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.nav .edit-btn{
+    background-image: url(../../assets/pfp/ico-edit.svg);
+}
+.nav .save-btn{
+    background-image: url(../../assets/pfp/ico-save.svg);
+}
+
+.banner .user-info-brief{
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 60%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* border: 1px solid red; */
+    color: var(--white);
+    font-size: 1.0005rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.banner .user-info-brief div:first-child{
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.banner .left-positioned{
+    position: absolute;
+    top: min(12vh, 250px);
+    left: min(60vw, 450px);
+    transition: all 0.5s ease-in-out;
+}
+
+.user-info-view{
+    margin: 50px 0;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.user-info-view .info-card{
+    display: flex;
+    align-items: center;
+    margin: 15px auto;
+    width: 100%;
+}
+
+.user-info-view .info-card:first-child >div>div{
+    display: flex;
+    align-items: center;
+    overflow: visible !important;
+}
+
+.info-card-value{
+    font-size: 1.0005rem;
+    font-weight: 600;
+}
+
+#usernameReloadBtn{
+    height: 20px;
+    width: 20px;
+    padding: 2.5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+.user-info-view .info-card img{
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    background-color: var(--c-icon-light-blue);
+    border-radius: 12px;
+    box-shadow: var(--c-icon-shadow);
+}
+
+.user-info-view .info-card > div{
+    margin-left: 15px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-card-label{
+    font-size: 0.75rem;
+    color: var(--c-lebel-grey);
+}
